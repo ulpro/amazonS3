@@ -5,7 +5,7 @@ def upload_file_to_s3(file_path, bucket_name, object_name):
     # Créer une session AWS
     session = boto3.Session(
         aws_access_key_id='AKIA3PHTF3PC4TPQLUFG',
-        aws_secret_access_key='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'
+        aws_secret_access_key='uMl1vI8FgzOP2dZd2Wz2YZXCRdh+wUQgx88uGfJw12'
     )
 
     # Créer une instance du client S3
