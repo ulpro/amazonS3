@@ -4,8 +4,8 @@ import os
 def upload_file_to_s3(file_path, bucket_name, object_name):
     # Créer une session AWS
     session = boto3.Session(
-        aws_access_key_id='VOTRE_ACCESS_KEY',
-        aws_secret_access_key='VOTRE_SECRET_ACCESS_KEY'
+        aws_access_key_id='AKIA3PHTF3PC4TPQLUFG1',
+        aws_secret_access_key='uMl1vI8FgzOP2dZd2Wz2YZXCRdh+wUQgx88uGfJw12'
     )
 
     # Créer une instance du client S3
@@ -19,13 +19,15 @@ def upload_file_to_s3(file_path, bucket_name, object_name):
         print("Erreur lors du téléchargement du fichier sur S3:", str(e))
 
 # Obtenir le chemin absolu du fichier à télécharger
-file_path = os.path.abspath('chemin/vers/votre/fichier.txt')
+file_path = os.path.abspath('D:/projets/fichier.txt')
+
+
 
 # Spécifier le nom du bucket S3
-bucket_name = 'nom-de-votre-bucket'
+bucket_name = 'awss3-bucket1'
 
 # Spécifier le nom du fichier sur S3
-object_name = 'nom-du-fichier-sur-s3.txt'
+object_name = 'test.txt'
  
 
 # Appeler la fonction pour télécharger le fichier mis à jour sur S3
